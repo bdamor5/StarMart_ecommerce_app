@@ -1,0 +1,144 @@
+.sidebar_content {
+  background-color: lightcoral;
+  width:300px;
+  margin: 1% 0;
+  border-radius: 5px;
+  padding: 3%;
+  box-shadow: 1px 1px 10px 4px rgba(0, 0, 0, 0.3);
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid white;
+}
+
+.p_image img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.p_name {
+  color: white;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.sidebar_links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sidebar_item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  color: white;
+  padding-left: 5%;
+  border-radius: 10px;
+  transition: 300ms all;
+}
+
+.sidebar_item h4 {
+  padding-top: 9px;
+}
+
+.sidebar_item:hover {
+  cursor: pointer;
+  background-color: rgb(221, 181, 181);
+}
+
+
+/* to make side drawer overlap over the contents */
+.sidebar_open_content{
+  position: absolute;
+  z-index: 100;
+}
+
+@media(max-width:992px){
+    .sidebar_content {
+        width: 200px;
+      }
+            
+      .p_image img {
+        width: 70px;
+      }
+      
+      .p_name {
+        font-size: 20px;
+      }
+      
+      .sidebar_item h4 {
+        font-size: 20px;
+        padding-top: 9px;
+      }
+
+      .sidebar_icons{
+        font-size: 20px !important;
+    }
+}
+
+@media(max-width: 768px) {
+  .sidebar_open_content {
+    background-color: lightcoral;
+    margin: 1% 0;
+    border-radius: 5px;
+    padding: 3%;
+    box-shadow: 1px 1px 10px 4px rgba(0, 0, 0, 0.3);
+    width: 150px;
+  }
+
+  .profile_open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid white;
+  }
+
+  .p_image_open img {
+    width: 50px;
+    border-radius: 50%;
+  }
+
+  .p_name_open {
+    color: white;
+    font-weight: 700;
+    font-size: 17px;
+  }
+
+  .sidebar_open_links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sidebar_open_item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    color: white;
+    padding-left: 5%;
+    border-radius: 10px;
+    transition: 300ms all;
+  }
+
+  .sidebar_open_item h4 {
+    font-size: 17px;
+    padding-top: 9px;
+  }
+
+  .sidebar_open_item:hover {
+    cursor: pointer;
+    background-color: rgb(221, 181, 181);
+  }
+
+  .sidebar_open_icons{
+      font-size: 17px !important;
+  }
+}

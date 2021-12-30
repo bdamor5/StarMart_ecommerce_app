@@ -1,0 +1,67 @@
+
+/* AdminOrderById */
+.admin_order_status_container{
+    float: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.admin_order_status{
+    width: 250px;
+    text-align: center;
+    padding: 3%;
+    font-weight: 600;
+    border-radius: 20px;
+    background-color: bisque;
+  }
+
+  .updateBtn{
+      margin-top: 4% !important;
+      padding: 2%;
+      bottom: 1px solid white;
+      color: lightcoral !important;
+      background-color:white !important;
+      border-radius: 10px;
+      transition:300ms all;
+  }
+
+
+
+@media(max-width:1400px){
+    .admin_order_status{
+      width: 150px;
+    }
+
+    .updateBtn{
+      transform: scale(0.8);
+    }
+
+  }
+  
+  @media (max-width: 1200px) {
+  
+    .admin_order_status{
+      width: 200px;
+      font-size: 14px;
+    }
+  
+  }
+  
+  @media (max-width: 768px) {  
+            .admin_order_status{
+              width: 150px;
+              font-size: 10px;
+            }
+
+            .updateBtn{
+              transform: scale(0.7);
+            }
+  }
+  
+  @media (max-width: 600px) {  
+            .admin_order_status{
+              width: 120px;
+              font-size: 10px;
+            }
+  }
+  

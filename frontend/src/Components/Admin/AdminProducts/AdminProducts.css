@@ -1,0 +1,25 @@
+.newProductBtn{
+    background-color: tomato;
+    padding: 1%;
+    border-radius: 10px;
+    box-shadow: 1px 2px 3px 3px rgba(0,0,0,0.3);
+    margin-bottom: 20px;
+    width: 180px;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    transition: 300ms all;
+}
+
+.newProductBtn:hover{
+    cursor: pointer;
+    box-shadow: 1px 2px 3px 3px rgba(0,0,0,0.5);
+
+}
+
+@media(max-width:768px){
+    .newProductBtn{
+        width: 150px;
+        transform: scale(0.9);
+    }
+}

@@ -1,0 +1,34 @@
+.review_box{
+    margin: 8% auto;
+    width:400px;
+    background-color:lightcoral;
+    box-shadow: 5px 5px 10px 5px rgba(64, 16, 16, 0.5);
+    border-radius:20px;
+    padding-bottom: 1%;
+}
+
+.review_input{
+    width:200px
+}
+
+.review_icon{
+    box-shadow: 1px 1px 5px 2px rgba(64, 16, 16, 0.2);
+    transition: 300ms all;
+}
+
+.review_icon:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 5px 2px rgba(64, 16, 16, 0.5);
+
+}
+
+@media(max-width:768px){
+    .review_box{
+        transform: scale(0.8);
+        width: 300px;
+    }
+
+    .review_input{
+        width:200px
+    }
+}

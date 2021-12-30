@@ -1,0 +1,221 @@
+.downloadapp_container {
+  margin: 40px auto;
+  background-color: #ee755f;
+  width: 80%;
+  min-height: 100vh;
+  box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.4);
+  color: white;
+  border-radius: 10px;
+}
+
+.downloadapp_container > h3 {
+  font-weight: 700;
+  color: white;
+  background-color: #9acd32;
+  width: 30%;
+  margin: 0 auto;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 1px 7px 10px 1px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  padding: 1%;
+}
+
+.downloadapp_container_align {
+  display: flex;
+  justify-content: center;
+}
+
+.downloadapp_left {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 5%;
+}
+
+.downloadapp_left img {
+  width: 90px;
+  margin-left: 10px;
+}
+
+.downloadapp_left h2 {
+  font-size: 40px;
+  padding-top: 3%;
+  font-weight: 800;
+}
+
+.downloadapp_left h3 {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  padding-top: 2%;
+  font-weight: 800;
+}
+
+.downloadapp_features {
+  display: flex;
+  align-items: center;
+  padding-top: 8%;
+}
+
+.downloadapp_features h5 {
+  font-size: 20px;
+}
+
+.downloadapp_features img {
+  width: 30px;
+  margin-right: 5px;
+}
+
+.downloadapp_link img {
+  padding-top: 8%;
+  width: 200px;
+}
+
+.downloadapp_right img {
+  padding-top: 30%;
+  width: 300px;
+  height: 550px;
+  padding-left: 5%;
+}
+
+@media (max-width: 1200px) {
+  .downloadapp_left h2 {
+    text-align: center;
+  }
+
+  .downloadapp_link img {
+    padding-top: 8%;
+    width: 150px;
+  }
+}
+
+@media (max-width: 992px) {
+  .downloadapp_container {
+    width: 100%;
+  }
+
+  .downloadapp_link img {
+    width: 135px;
+  }
+}
+
+@media (max-width: 768px) {
+  .downloadapp_container {
+    width: 90%;
+    margin-bottom: 10%;
+  }
+
+  .downloadapp_container_align {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .downloadapp_container > h3 {
+    font-size: 18px;
+    margin-bottom: 5%;
+  }
+
+  .downloadapp_left {
+    padding-top: 0;
+  }
+
+  .downloadapp_left img {
+    width: 50px;
+  }
+
+  .downloadapp_left h2 {
+    font-size: 30px;
+    padding-top: 1%;
+    font-weight: 800;
+  }
+
+  .downloadapp_left h3 {
+    font-size: 28px;
+  }
+
+  .downloadapp_features {
+    padding-top: 4%;
+  }
+
+  .downloadapp_features h5 {
+    font-size: 18px;
+  }
+
+  .downloadapp_features img {
+    width: 20px;
+    margin-right: 5px;
+  }
+
+  .downloadapp_link img {
+    padding-top: 8%;
+    width: 180px;
+  }
+
+  .downloadapp_right img {
+    padding-top: 10%;
+    width: 300px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  .downloadapp_container {
+    width: 100%;
+  }
+
+  .downloadapp_container_align {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .downloadapp_container > h3 {
+    font-size: 16px;
+    margin-bottom: 5%;
+  }
+
+  .downloadapp_left {
+    padding-top: 0;
+  }
+
+  .downloadapp_left img {
+    width: 20px;
+  }
+
+  .downloadapp_left h2 {
+    font-size: 20px;
+    padding-top: 1%;
+    font-weight: 800;
+  }
+
+  .downloadapp_left h3 {
+    font-size: 25px;
+  }
+
+  .downloadapp_features {
+    padding-top: 4%;
+  }
+
+  .downloadapp_features h5 {
+    font-size: 11px;
+  }
+
+  .downloadapp_features img {
+    width: 20px;
+    margin-right: 5px;
+  }
+
+  .downloadapp_link img {
+    padding-top: 8%;
+    width: 150px;
+  }
+
+  .downloadapp_right img {
+    padding-top: 40%;
+    width: 300px;
+    height: 550px;
+    background: transparent;
+  }
+}

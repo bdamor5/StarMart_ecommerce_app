@@ -1,0 +1,169 @@
+.user_order_container {
+  width: 70%;
+  margin: 20px auto;
+  padding: 1%;
+  border-radius: 20px;
+}
+
+/* MyOrderItem */
+
+.orderItem_container {
+  background-color: lightcoral;
+  padding: 2%;
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.4);
+  margin-bottom: 20px;
+}
+
+.order_heading {
+  display: flex;
+  justify-content: space-around;
+  color: black;
+  background-color: gainsboro;
+  border-radius: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding: 1%;
+}
+
+.order_status{
+  width: 250px;
+  text-align: center;
+  padding: 1% 2%;
+  font-weight: 600;
+  border-radius: 20px;
+  background-color: bisque;
+  float:right;
+}
+
+.order_items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.orderItem {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #FFE4C4;
+  margin-bottom: 30px;
+  border: 1px solid lightcoral;
+  padding: 3% 1%;
+  border-radius: 20px;
+  box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.4);
+  transition: 300ms all;
+}
+
+.orderItem:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.6);
+}
+
+.orderItem img {
+  width: 150px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.4);
+}
+
+.orderItem_name,
+.orderItem_price {
+  color: rgb(68, 65, 65);
+  font-weight: 700;
+}
+
+@media(max-width:1400px){
+  .order_status{
+    width: 150px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .user_order_container {
+    width: 90%;
+  }
+
+  .orderItem {
+    width: 80%;
+  }
+
+  .order_status{
+    width: 200px;
+    font-size: 14px;
+  }
+
+  .order_placed,
+  .order_price,
+  .order_ship {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+    .user_order_container{
+        width:90%;
+        }
+
+        .orderItem{
+            width:80%;
+        }
+
+        .orderItem img {
+            width: 100px;
+          }
+    
+        .order_placed,
+        .order_price,
+        .order_ship{
+            font-size: 12px;
+        }
+
+        .order_heading {
+            padding: 2%;
+          }
+
+          .orderItem {
+            justify-content: space-around;
+          }
+
+          .orderItem_name,
+          .orderItem_price{
+              font-size: 14px;
+          }
+
+          .order_status{
+            width: 150px;
+            font-size: 10px;
+          }
+}
+
+@media (max-width: 600px) {
+    .user_order_container{
+        width:99%;
+        }
+
+        .orderItem{
+            width:90%;
+        }
+
+        .orderItem img {
+            width: 90px;
+          }
+    
+        .order_placed,
+        .order_price,
+        .order_ship{
+            font-size: 10px;
+        }
+
+        .orderItem_name,
+          .orderItem_price{
+              font-size: 12px;
+          }
+
+          .order_status{
+            width: 120px;
+            font-size: 10px;
+          }
+}

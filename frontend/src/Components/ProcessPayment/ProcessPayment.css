@@ -1,0 +1,57 @@
+.paymentField{
+    width: 200px;
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.paymentField:first-child{
+    margin-top: 20px;
+}
+
+.paymentInput{
+    border: 1px solid white;
+    width: 180px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 2%;
+}
+
+.paymentBtn{
+    color: white;
+    font-weight: 700;
+    padding: 2% 4%;
+    background-color: #9ACD32;
+    border: 1px solid #9ACD32;
+    box-shadow: 3px 3px 5px 2px rgba(0,0,0,0.2);
+    border-radius: 10px; 
+}
+
+.processingBtn{
+    color: white !important;
+    font-weight: 700 !important;
+    padding: 2% 4%;
+    background-color: #9ACD32 !important;
+    border: 1px solid #9ACD32 !important;
+    box-shadow: 3px 3px 5px 2px rgba(0,0,0,0.2);
+    border-radius: 10px !important; 
+}
+
+/* PaymentSuccess */
+.orderconfirmed_link h5{
+    transition: 400ms all;
+}
+
+.orderconfirmed_link h5:first-child:hover,
+.orderconfirmed_link h5:last-child:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+@media(max-width:768px){
+    .orderconfirmed_link h5{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}

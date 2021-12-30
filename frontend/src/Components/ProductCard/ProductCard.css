@@ -1,0 +1,156 @@
+.product_card{
+    width:250px;
+    height: 300px;
+    box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.5);
+    margin:1% auto;
+    padding-bottom:6%;
+    border-radius:20px;
+    background-color:beige;
+    transition: 300ms all;
+}
+
+.product_card:hover{
+    box-shadow: 1px 1px 10px 5px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+.product_image img{
+    width:250px;
+    height: 200px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.product_text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.product_title{
+    font-weight: 700;
+    color:brown;
+}
+
+.product_customer{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    margin-top: 1px;
+}
+
+.product_details{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin-top: 5px;
+
+}
+
+.product_category{
+    font-weight: 700;
+    color:gray;
+}
+
+.product_price{
+    font-weight: 700;
+    font-size: 17px;
+}
+
+@media(max-width:1200px){
+    .product_card{
+        width:250px;
+        box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.5);
+        margin:1% auto;
+        padding-bottom:6%;
+        border-radius:20px;
+        background-color:beige;
+        transition: 300ms all;
+    }
+
+    .product_image img{
+        width:250px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .product_title{
+        font-size: 20px;
+    }
+
+    .product_customer{
+        transform: scale(0.8);
+        width: 100%;
+    }
+
+    .product_category{
+        font-size: 15px;
+    }
+    
+    .product_price{
+        font-size: 18px;
+    }
+}
+
+@media(max-width:992px){
+    .product_card{
+        width:200px;
+        margin-bottom:5% ;
+    }
+
+    .product_image img{
+        width:200px;
+        height: 180px;
+
+    }
+}
+
+@media(max-width:768px){
+    .product_card{
+        width:200px;
+        height: 250px;
+    }
+
+    .product_image img{
+        width:200px;
+        height: 160px;
+    }
+
+    .product_title{
+        font-size: 15px;
+    }
+
+    .product_customer{
+        transform: scale(0.8);
+        width: 100%;
+    }
+
+    .product_category{
+        font-size: 13px;
+    }
+    
+    .product_price{
+        font-size: 14px;
+    }
+}
+
+@media(max-width:600px){
+    .product_card{
+        width:140px;
+        height: 200px;
+    }
+
+    .product_image img{
+        width:140px;
+        height: 110px;
+    }
+
+    .product_customer{
+        transform: scale(0.6);
+        width: 100%;
+    }
+
+    .product_price{
+        font-size: 13px;
+    }
+}

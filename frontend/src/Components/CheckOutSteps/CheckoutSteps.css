@@ -1,0 +1,11 @@
+@media(max-width : 800px){
+    .stepper{
+        width: 90% !important;
+    }
+}
+
+@media(max-width : 600px){
+    .stepper{
+        width: 100% !important;
+    }
+}

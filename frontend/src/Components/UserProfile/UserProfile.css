@@ -1,0 +1,146 @@
+.profile_container{
+    background-color: lightcoral;
+    box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    margin:3% 15%;
+}
+
+.profile_content{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin:0 50px;
+}
+
+.profile_image img{
+    width: 210px;
+    border-radius: 40%;
+    box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.4);
+    margin: 10% 0;
+}
+
+.profile_details{
+    border-left: 1px solid white;
+}
+
+.profile_details h3{
+    color: white;
+    padding-left: 100px;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.profile_buttons{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: 15px auto;
+    border-top: 1px solid white;
+}
+
+.profile_buttons Button{
+    margin: 0px 50px 30px 50px;
+}
+
+.dialog_box{
+    background-color: lightcoral !important;
+    color: white;
+    margin: 15vw 35vw;
+    border-radius:20px
+}
+
+.dialog_box > h2{
+    font-weight: 600;
+}
+
+.dialog_buttons{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin: 15px auto;
+    margin-bottom: 0px;
+}
+
+/*  */
+@media(max-width:1200px){
+    .profile_image img{
+        width: 150px;
+        margin:10px 50px;
+    }
+
+    .profile_details{
+        margin-top: 20px;
+        width: 80%;
+    }
+
+    .profile_details h3{
+        font-size: 25px;
+        padding-left: 50px;
+    }
+}
+
+@media(max-width:992px){
+    .profile_image img{
+        width: 100px;
+    }
+
+    .profile_details{
+        margin-top: 20px;
+    }
+
+    .profile_details h3{
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .dialog_box{
+        margin: 15vw 30vw;
+    }
+}
+
+@media(max-width:768px){
+    .profile_content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .profile_details{
+        border-top: 1px solid white;
+        border-left: none;
+    }
+
+    .profile_details h3{
+        padding-left: 0px;
+        margin:30px;
+        font-size: 17px;
+        text-align: left;
+    }
+
+    .profile_buttons{
+        border-top: 1px solid white;
+    }
+
+    .dialog_box{
+        margin: 30vw 25vw;
+    }
+}
+
+@media(max-width:600px){
+    .profile_container{
+        margin:3% 5%;
+    } 
+
+    .profile_details h3{
+        margin:20px;
+        text-align: left;
+    }
+    
+    .dialog_box{
+        margin: 50vw 15vw;
+    }
+
+    .dialog_box > h2{
+        font-size: 17px;
+    }
+}

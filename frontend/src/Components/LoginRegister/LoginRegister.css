@@ -1,0 +1,133 @@
+.loginregister_container{
+    padding-top:40px;
+    background-color:honeydew;
+
+    /* so that footer is placed properly */
+    min-height: 100vh;
+}
+
+.switch{
+    display: flex;
+    justify-content:center;
+    width:100%;
+    color:white;
+    padding-top:0.6%;
+    box-shadow: 3px 3px 5px 1px rgba(64, 16, 16, 0.5);
+}
+
+.switch h4{
+    font-weight: 600;
+}
+
+.loginregister_box{
+    margin: 8% auto;
+    width:400px;
+    background-color:lightcoral;
+    box-shadow: 5px 5px 10px 5px rgba(64, 16, 16, 0.5);
+    border-radius:20px;
+    padding-bottom: 1%;
+    transition:300ms all;
+}
+
+.loginregister_box:hover{
+    box-shadow:10px 10px 10px 2px rgba(0,0,0,0.4)
+}
+
+.loginForm{
+    display: flex;
+    align-items:center;
+    flex-direction:column;
+    padding:5%;
+    transform: scale(1.1);
+}
+
+.loginEmail,.loginPassword{
+    padding: 3%;
+}
+
+.loginBtn{
+    margin-top: 4% !important;
+    padding: 1% 1% 5% 1%;
+    bottom: 1px solid white;
+    color: lightcoral !important;
+    background-color:white !important;
+    border-radius: 10px;
+    transition:300ms all;
+}
+
+.loginBtn:hover{
+    box-shadow:3px 3px 5px 2px rgba(0,0,0,0.4)
+}
+
+.forgotpw > a:hover{
+    color:white;
+    border-bottom:1px solid white;
+}
+
+/* register */
+
+.registerForm{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5%;
+    transform: scale(1.1);
+}
+
+.registerName,
+.registerEmail,
+.registerPassword{
+    padding: 3%;
+}
+
+input{
+    border: 1px solid white;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.registerAvatar{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 3%;
+}
+
+.avatarPreview{
+    width:50px;
+    border-radius: 100%;
+}
+
+.registerAvatar > input{
+    margin-top: 10px;
+    transition: 300ms all;
+    transform: scale(0.8);
+}
+
+.registerAvatar > input:hover {
+    box-shadow:3px 3px 5px 2px rgba(0,0,0,0.4);
+}
+
+/* input for file upload */
+.registerAvatar > input::file-selector-button {
+    width: 100%;
+    border:1px solid white;
+    background-color: white;
+    color:lightcoral;
+    cursor: pointer;
+}
+  
+/*  */
+@media(max-width:768px){
+    .loginregister_box{
+        transform: scale(0.8);
+        padding-bottom: 3%;
+        margin-bottom: 5%;
+    }
+}
+
+@media(max-width:600px){
+    .loginregister_box{
+        transform: scale(0.8);
+    }
+}

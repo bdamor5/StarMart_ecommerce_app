@@ -1,0 +1,32 @@
+/* breadcrumbs */
+.bc{
+    padding: 1%;
+}
+
+.bc_item{
+    font-weight: 700;
+    color:gray;
+    transition: 300ms all;
+}
+
+.bc_lastitem{
+    font-weight: 500;
+    color: black;
+}
+
+.bc_item:hover{
+    cursor: pointer;
+    color: black;
+}
+
+@media(max-width : 768px){
+    .bc_item,
+    .bc_lastitem{
+        font-size: 13px;
+    }
+}
+
+/* AdminUserById */
+.selectRole{
+    width: 100px;
+}

@@ -1,0 +1,36 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/*firefox*/
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* remove blue focus outline border from input & textarea */
+textarea:focus, input:focus{
+  outline: none;
+}
+
+.redColor{
+  color:red;
+}
+
+.blueColor{
+  color:blue;
+}
+
+.greenColor{
+  color:chartreuse;
+}
+

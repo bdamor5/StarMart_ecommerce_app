@@ -1,0 +1,28 @@
+.starloader{
+    width:100vw;
+    height: 100vh;
+    background-color: #F0F0F0;
+    display: grid;
+    place-items: center;
+}
+
+.starloader img{    
+    width:20%;
+    animation : loading 300ms linear infinite;
+}
+
+@keyframes loading {
+    to{
+        transform: rotateY(360deg);
+    }    
+}
+
+@media(max-widht:600px){
+    .starloader{
+        display: flex;
+        justify-content: center;
+    }
+    .starloader img{ 
+        width: 40%; 
+    }
+}

@@ -1,0 +1,140 @@
+.order_container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 2%;
+    padding: 2%;
+  }
+  
+  .order_items_container,
+  .orderprice_details {
+    background-color: lightcoral;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    padding: 1%;
+  }
+  
+  .order_items_container > h3,
+  .orderprice_details > h3 {
+    color: gainsboro;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 0.1px solid white;
+    padding: 1vmax;
+  }
+  
+  .o_items {
+    height: 70vh;
+    overflow: auto;
+  }
+  
+  .opd_1,
+  .opd_2,
+  .opd_3,
+  .opd_4 {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    border-bottom: 0.1px solid white;
+    width: 90%;
+    margin: 0 auto;
+    padding: 3%;
+  }
+  
+  .opd_1 h2,
+  .opd_2 h2,
+  .opd_3 h2,
+  .opd_4 h2 {
+    font-weight: 600;
+    font-size: 20px;
+  }
+  
+  .opd_1 h2:last-child {
+    color: lightyellow;
+  }
+  
+  .opd_2 h2:last-child,
+  .opd_3 h2:last-child {
+    color: chartreuse;
+  }
+  
+  .orderprice_details div:last-child {
+    display: grid;
+    place-items: center;
+    margin-top: 20px;
+  }
+  
+  .orderbtn {
+    padding: 1.5% 5%;
+    color: white;
+    font-weight: 700;
+    background-color: orangered;
+    border-radius: 20px;
+    border: 1px solid orangered;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.4);
+    width: 30%;
+  }
+
+  .cc_image_order img{
+    width: 100px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.4);
+  }
+  
+  @media (max-width: 992px) {
+    .order_container {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .orderprice_details {
+      margin-top: 20px;
+    }
+  
+    .o_items {
+      height: 50vh;
+    }
+
+    .cc_1{
+        justify-content: space-between;
+        align-items: center;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .opd_1 h2,
+    .opd_2 h2,
+    .opd_3 h2,
+    .opd_4 h2 {
+      font-size: 15px;
+    }
+  
+    .orderbtn {
+    font-size: 12px;
+      padding: 1%;
+      width: 30%;
+      margin-bottom: 10px;
+    }
+
+    .cc_image_order img{
+        width: 70px
+      }
+
+    .cc_delivery_details h3,
+    .delivery_date h3{
+        font-size: 12px;
+    }
+
+    .removebtn{
+        font-size: 11px;
+      width: 20%;
+      margin-bottom: 10px;
+    }
+
+    .qtybtn ,
+    .qtybtnofs,
+    .qtyinput{
+        transform: scale(0.9);
+    }
+  }
+  
