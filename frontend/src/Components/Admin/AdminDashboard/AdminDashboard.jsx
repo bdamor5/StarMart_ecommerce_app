@@ -87,8 +87,8 @@ const AdminDashboard = () => {
             <div className="d_top_item">
                 <PeopleAltIcon className='d_top_item_icon' style={{color:'white'}}/>
                 <div>
-                    <h4>CUSTOMERS</h4>
-                    <h4 style={{color:'white'}}>{users && users.length}</h4> 
+                    <h4>USERS</h4>
+                    <h4 style={{color:'white'}}>{users && users.length - 1}</h4> 
                 </div>
             </div>
             <div className="d_top_item">
