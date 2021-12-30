@@ -102,7 +102,7 @@
 
 @media (max-width: 768px) {
     .user_order_container{
-        width:90%;
+        width:80%;
         }
 
         .orderItem{
@@ -124,11 +124,13 @@
           }
 
           .orderItem {
-            justify-content: space-around;
+            flex-direction: column;
+            justify-content: space-between;
           }
 
           .orderItem_name,
           .orderItem_price{
+            padding-top: 3%;
               font-size: 14px;
           }
 
@@ -148,13 +150,13 @@
         }
 
         .orderItem img {
-            width: 90px;
+            width: 100px;
           }
     
         .order_placed,
         .order_price,
         .order_ship{
-            font-size: 10px;
+            font-size: 11px;
         }
 
         .orderItem_name,

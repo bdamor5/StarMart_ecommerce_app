@@ -29,7 +29,7 @@ const MyOrderItem = ({ order }) => {
               order.orderItems.map((curr)=>(
                     <div className="orderItem" onClick={() => navigate(`/productdetails/${curr.productId}`)}>
                         <img src={curr.image} alt="orderitem_image" />
-                        <div className="orderItem_name">{curr.name}</div>
+                        <div className="orderItem_name">{curr.name.substr(0,15)}...</div>
                         <div className="orderItem_price">₹{curr.price}</div>
                     </div>
               ))
