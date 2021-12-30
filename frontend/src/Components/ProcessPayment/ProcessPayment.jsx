@@ -142,9 +142,11 @@ const ProcessPayment = () => {
       <div className="loginregister_box" style={{ marginTop: "30px" }}>
         <div className="mx-auto"></div>
         <form className="loginForm" onSubmit={handleSubmit}>
+        <p style={{color:'white',fontWeight:'600'}}>Default Card Number : 4000 0027 6000 3184</p>
+
           <div className="paymentField">
             <CreditCardIcon style={{ color: "white", paddingRight: "1%" }} />
-            <CardNumberElement className="paymentInput"/>
+            <CardNumberElement className="paymentInput" value="1111 1111 1111 1111"/>
           </div>
 
           <div className="paymentField">

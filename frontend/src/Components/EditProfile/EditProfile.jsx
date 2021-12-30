@@ -15,22 +15,17 @@ import Loader from "../Loader/Loader";
 const EditProfile = () => {
   const alert = useAlert();
   const dispatch = useDispatch();
-  const { isAuthenticated, user} = useSelector((state) => state.user);
+  const  {user} = useSelector((state) => state.user);
   const navigate = useNavigate();
 
   //edit
-  const [userData, setUserData] = useState({
-    name: user.name,
-    email: user.email,
-  });
-
-  const { name, email } = userData;
+  const [name,setName] = useState(user.name)
+  const [email,setEmail] = useState(user.email)
 
   const [avatar, setAvatar] = useState(user.avatar.url);
 
   //on change for edit
-  const handleEditChange = (e) => {
-    if (e.target.name === "avatar") {
+  const handleAvatarChange = (e) => {
       const reader = new FileReader();
       //to read image file
 
@@ -44,9 +39,6 @@ const EditProfile = () => {
       reader.readAsDataURL(e.target.files[0]);
       //load event is fired i.e reader.onload func,
       //when is content read with readAsDataURL
-    } else {
-      setUserData({ ...user, [e.target.name]: e.target.value });
-    }
   };
 
   //on editing the user
@@ -122,7 +114,7 @@ const EditProfile = () => {
                 required
                 name="name"
                 value={name}
-                onChange={handleEditChange}
+                onChange={(e) => setName(e.target.value)}
               />
             </div>
             <div className="editEmail">
@@ -133,7 +125,7 @@ const EditProfile = () => {
                 required
                 name="email"
                 value={email}
-                onChange={handleEditChange}
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
 
@@ -147,7 +139,7 @@ const EditProfile = () => {
                 type="file"
                 name="avatar"
                 accept="image/*"
-                onChange={handleEditChange}
+                onChange={handleAvatarChange}
               />
             </div>
             <Button type="submit" className="loginBtn">

@@ -53,11 +53,11 @@ app.use('/api/product',product)
 app.use('/api/order',order)
 app.use('/api/payment',payment)
 
-app.use(express.static(path.join(__dirname , '../frontend/build')));
+// app.use(express.static(path.join(__dirname , '../frontend/build')));
 
-app.get('*' , (req,res) => {
-    res.sendFile(path.resolve(__dirname , '../frontend/build/Index.html'))
-})
+// app.get('*' , (req,res) => {
+//     res.sendFile(path.resolve(__dirname , '../frontend/build/Index.html'))
+// })
 
 //error middleware
 app.use(errorMiddleware);
