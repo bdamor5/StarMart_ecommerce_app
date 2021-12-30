@@ -25,7 +25,7 @@ import {
   } from "../constants/productConstants";
   
 //to fetch all products
-export const getAllProducts = (keyword = "" , currentPage = 1 , price=[0,50000],category,ratings=0,sortPrice='',sortRatings='') => async(dispatch) =>{
+export const getAllProducts = (keyword = "" , currentPage = 1 , price=[0,50000],category='',ratings=0,sortPrice='',sortRatings='') => async(dispatch) =>{
     try{
         dispatch({type:FETCH_ALL_PRODUCTS_REQUEST});
 

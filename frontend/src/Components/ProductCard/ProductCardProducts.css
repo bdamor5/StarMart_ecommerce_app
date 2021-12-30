@@ -52,6 +52,7 @@
 
 .Products_title{
     font-weight: 700;
+    font-size: 16px;
     color:brown;
 }
 
@@ -102,10 +103,6 @@
         border-top-right-radius: 20px;
     }
 
-    .Products_title{
-        font-size: 20px;
-    }
-
     .Products_customer{
         transform: scale(0.8);
         width: 100%;
@@ -143,6 +140,11 @@
 
     .Products_price{
         font-size: 12px;
+    }
+
+    .Products_title{
+        font-size: 13px;
+        padding-top: 5%;
     }
 }
 

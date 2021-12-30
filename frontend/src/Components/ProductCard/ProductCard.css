@@ -29,6 +29,7 @@
 
 .product_title{
     font-weight: 700;
+    font-size: 18px;
     color:brown;
 }
 
@@ -117,7 +118,7 @@
     }
 
     .product_title{
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .product_customer{

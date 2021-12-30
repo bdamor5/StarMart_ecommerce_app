@@ -36,13 +36,15 @@ const AdminProducts = () => {
   const {products,loading} = useSelector(state => state.getAdminProducts)
 
   const columns = [
-    { field: "id", headerName: "Product ID", minWidth: 200, flex: 0.8 },
+    { field: "id", headerName: "Product ID", minWidth: 120, flex: 0.8 },
 
     {field: "name", headerName: "Name",minWidth: 200,flex: 1,},
 
-    {field: "stock",headerName: "Stock", minWidth: 50,flex: 0.5,}, 
+    {field: "stock",headerName: "Stock", minWidth: 50,flex: 0.5,},
 
-    {field: "price",headerName: "Price", minWidth: 100,flex: 0.3,type:'number'},
+    {field: "category",headerName: "category", minWidth: 50,flex: 0.5,},  
+
+    {field: "price",headerName: "Price", minWidth: 50,flex: 0.3,type:'number'},
 
     {field: "actions",headerName: "Actions",minWidth: 150, flex: 0.3,sortable: false,type:'number',
       renderCell: (params) => {
@@ -74,6 +76,7 @@ const rows = []
       rows.push({
         id: item._id,
         stock: item.Stock,
+        category:item.category,
         price: item.price,
         name: item.name,
       });

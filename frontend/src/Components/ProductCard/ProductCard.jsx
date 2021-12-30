@@ -18,7 +18,7 @@ const ProductCard = ({ product }) => {
       </div>
 
       <div className="product_text">
-        <h5 className="product_title">{product.name}</h5>
+        <h5 className="product_title">{product.name.substr(0,15)}...</h5>
 
         <div className="product_customer">
           <div className="product_ratings">

@@ -11,6 +11,7 @@ import { getAllOrders } from "../../../redux/actions/orderActions";
 import MonetizationOnIcon from '@mui/icons-material/MonetizationOn';
 import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
 import ReceiptLongIcon from '@mui/icons-material/ReceiptLong';
+import Loader from '../../Loader/Loader'
 
 const AdminDashboard = () => {
   const dispatch = useDispatch();
@@ -21,7 +22,7 @@ const AdminDashboard = () => {
     dispatch(getAllOrders());
   }, [dispatch]);
 
-  const { users} = useSelector((state) => state.allUsers);
+  const { loading,users} = useSelector((state) => state.allUsers);
   const { products } = useSelector((state) => state.getAdminProducts);
   const { orders } = useSelector((state) => state.allOrders);
 
@@ -71,7 +72,10 @@ const AdminDashboard = () => {
       <Helmet>
         <title>Admin Dashboard</title>
       </Helmet>
-      <div className="admin_container">
+      {
+        loading
+        ? <Loader/>
+        :<div className="admin_container">
         <div className="sidebar">
           <Sidebar active="Dashboard" />
         </div>
@@ -110,6 +114,8 @@ const AdminDashboard = () => {
           </div>
         </div>
       </div>
+      }
+      
     </>
   );
 };

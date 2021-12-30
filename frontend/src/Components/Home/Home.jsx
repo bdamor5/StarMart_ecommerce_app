@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import "./Home.css";
 import Carousel from "react-material-ui-carousel";
 import { Paper, Button, ButtonGroup } from "@mui/material";
@@ -45,22 +45,16 @@ const Home = () => {
       bg: "#FF0016",
     },
   ];
-  
+
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(getAllProducts());
   }, [dispatch]);
 
-  const {
-    loading,
-    error,
-    products,
-    productsCount,
-    resultPerPage,
-    filteredProductsCount,
-  } = useSelector((state) => state.getProducts);
+  const { loading, products } = useSelector((state) => state.getProducts);
 
+products.reverse()
   return (
     <>
       <Helmet>
@@ -95,9 +89,8 @@ const Home = () => {
         <div className="trending_products">
           <h3>Trending Products</h3>
           <div className="trending_product_lists">
-          {
-            loading 
-            ? <>
+            {loading ? (
+              <>
                 <SkeletonHome />
                 <SkeletonHome />
                 <SkeletonHome />
@@ -107,16 +100,15 @@ const Home = () => {
                 <SkeletonHome />
                 <SkeletonHome />
               </>
-            :
-            <>
-            {
-              products.map((curr)=>(
-                <ProductCard product={curr}/>
-              ))
-            }
-            </>
-          }          
-          </div>          
+            ) : (
+              <>
+                {products &&
+                  products.map((curr, index) => {
+                    return <ProductCard product={curr} key={curr._id} />;
+                  })}
+              </>
+            )}
+          </div>
         </div>
       </div>
     </>
