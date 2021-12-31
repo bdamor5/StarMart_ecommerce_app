@@ -50,9 +50,13 @@ const ProductDetails = () => {
   //comment
   const [comment, setComment] = useState("");
 
+  const {isAuthenticated} = useSelector(state => state.user)
+
   //submit review
   const handleSubmit = () => {
-    if (!rating || !comment) {
+    if(isAuthenticated === false){
+      alert.info('Please Log in to write a review')
+    }else if (!rating || !comment) {
       alert.info("Fill All The Fields");
     } else {
       const myForm = new FormData();
